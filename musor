@@ -1,0 +1,132 @@
+// // const menu = document.querySelector('ul.gallery');
+// // menu.classList.add('gallery__link');
+// // const markUp = createImages(images);
+// // menu.insertAdjacentHTML('afterbegin', markUp);
+// // function createImages(images) {
+// //   return images.reduce((acc, image) => (acc += createMarkup(image)), ' ');
+// // }
+// // function createMarkup({ preview, original, description }) {
+// //   const itemList = `<li><img src='${(preview,
+// //   original)}' alt='${description}'></li>`;
+// //   return itemList;
+// // }
+
+// ////chat gpt
+
+// // import galleryItems from './galler';
+
+// // const gallery = document.querySelector('.js-gallery');
+// // const lightbox = document.querySelector('.js-lightbox');
+// // const lightboxImage = document.querySelector('.lightbox__image');
+
+// // // Функция создания элемента галереи
+// // function createGalleryItem(item) {
+// //   const galleryItem = document.createElement('li');
+// //   galleryItem.classList.add('gallery__item');
+
+// //   const galleryLink = document.createElement('a');
+// //   galleryLink.classList.add('gallery__link');
+// //   galleryLink.href = item.original;
+
+// //   const galleryImage = document.createElement('img');
+// //   galleryImage.classList.add('gallery__image');
+// //   galleryImage.src = item.preview;
+// //   galleryImage.alt = item.description;
+// //   galleryImage.setAttribute('data-source', item.original);
+
+// //   galleryLink.appendChild(galleryImage);
+// //   galleryItem.appendChild(galleryLink);
+
+// //   return galleryItem;
+// // }
+
+// // // Функция добавления элементов галереи в разметку
+// // function renderGalleryItems(items) {
+// //   const galleryItems = items.map(item => createGalleryItem(item));
+// //   gallery.append(...galleryItems);
+// // }
+
+// // renderGalleryItems(galleryItems);
+
+// // gallery.addEventListener('click', onGalleryClick);
+
+// // function onGalleryClick(event) {
+// //   event.preventDefault();
+
+// //   if (event.target.nodeName !== 'IMG') {
+// //     return;
+// //   }
+
+// //   const imageUrl = event.target.dataset.source;
+// //   openLightbox(imageUrl);
+// // }
+
+// // function openLightbox(imageUrl) {
+// //     lightbox.classList.add('is-open');
+// //     lightboxImage.src = imageUrl;
+// //   }
+
+// //   const lightboxButton = document.querySelector('[data-action="close-modal"]');
+
+// // lightboxButton.addEventListener('click', onCloseLightbox);
+
+// // function onCloseLightbox() {
+// //   lightbox.classList.remove('is-open');
+// //   lightboxImage.src = '';
+// // }
+
+// ////chat gpt
+
+// const galleryUl = document.querySelector(".js-gallery");
+// const lightbox = document.querySelector(".js-lightbox");
+// const lightboxImage = document.querySelector(".lightbox__image");
+
+// function renderGalaryImages(items) {
+//   const galleryItems = items.map(
+//     (item) =>
+//       `<li><a href="${item.original}"><img src="${item.preview}" alt = '${item.description}'></a></li>`
+//   );
+//   return galleryItems.join("");
+// }
+// galleryUl.innerHTML = renderGalaryImages(items);
+
+// renderGalaryImages(items);
+
+
+
+
+
+
+// const onGlaryClick = (evt) => {
+//   evt.preventDefault();
+
+//   if (evt.target.nodeName !== "IMG") {
+//     return;
+//   }
+
+//   const imageUrl = ;
+
+//   function openLightBox(imageUrl) {
+//     lightbox.classList.add("is-open");
+//     lightboxImage.src = imageUrl;
+//   }
+
+//   openLightBox(imageUrl);
+// };
+
+// galleryUl.addEventListener("click", onGlaryClick);
+
+// const lightboxButton = document.querySelector(
+//   '[data-action = "close-lightbox"]'
+// );
+
+// lightboxButton.addEventListener("click", onCloseLightBox);
+
+// function onCloseLightBox() {
+//   lightbox.classList.remove("is-open");
+//   lightbox.src = "";
+// }
+
+// // const lightboxOverlay = document.querySelector("lightbox__overlay");
+
+// // lightboxOverlay.addEventListener("click", onCloseLightBox);
