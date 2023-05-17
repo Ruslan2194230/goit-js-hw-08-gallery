@@ -26,6 +26,8 @@ const refs = {
     lightbox: document.querySelector('.lightbox'),
     btn: document.querySelector('[data-action="close-lightbox"]')
   };
+
+  
   
   
      
